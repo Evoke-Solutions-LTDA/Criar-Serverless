@@ -55,6 +55,7 @@ Crie o arquivo `serverless.ts` utilizando o template necessário para o seu proj
  ┃ ┗ 📜index.ts
  ┣ 📂libs
  ┃ ┣ 📜api-gateway.ts
+ ┃ ┣ 📜handler-resolver.ts
  ┃ ┗ 📜lambda.ts
 
 ```
