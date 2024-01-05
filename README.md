@@ -13,8 +13,16 @@ Adicionar ao script "start": "serverless offline start",
 ### 2. Instalar Pacotes de Desenvolvimento
 
 ```bash
-npm install serverless serverless-offline typescript @serverless/typescript @types/aws-lambda serverless-esbuild serverless-domain-manager -D
+npm install ts-node serverless serverless-offline typescript @serverless/typescript @types/aws-lambda serverless-esbuild serverless-domain-manager json-schema-to-ts @middy/core @middy/http-json-body-parser -D
 ```
+
+Sobre o Middy
+
+"O Middy facilita a criação e a utilização de middlewares em aplicações Node.js baseadas em AWS Lambda e AWS HTTP API Gateway. Ele oferece um conjunto de utilitários e padrões para desenvolver middlewares de forma estruturada, promovendo a modularidade e a reutilização de código."
+
+Sobre o serverless-esbuild
+
+"Facilita a criação de de serverless com aws lambda"
 
 ### 3. Instalar Pacotes Normais
 
