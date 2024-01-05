@@ -1,7 +1,8 @@
-import { middyfy } from "../libs/lambda";
+import { formatJSONResponse } from "../../libs/api-gateway";
+import { middyfy } from "../../libs/lambda";
 
 const helloWorld = async () => {
-  return { hello: "Hello World" };
+  return formatJSONResponse({ hello: "Hello World" });
 };
 
 export const main = middyfy(helloWorld);
