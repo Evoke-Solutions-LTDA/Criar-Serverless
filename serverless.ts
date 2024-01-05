@@ -3,19 +3,18 @@ import type { AWS } from '@serverless/typescript';
 import helloWorld from "@functions/helloWorld";
 
 const serverlessConfiguration: AWS = {
-  service: "pix-defibanksolutions",
+  service: "indigo-weekly",
   frameworkVersion: "3",
   plugins: [
     "serverless-esbuild",
     "serverless-offline",
-    "serverless-dotenv-plugin",
     "serverless-domain-manager",
   ],
   provider: {
     name: "aws",
     runtime: "nodejs14.x",
     region: "sa-east-1",
-    stage: "production",
+    stage: "dev",
     timeout: 30,
     memorySize: 256,
     apiGateway: {
@@ -51,12 +50,12 @@ const serverlessConfiguration: AWS = {
       concurrency: 10,
     },
     customDomain: {
-      domainName: "pix.defibanksolutions.com",
+      domainName: "indigo.warriorvikingnft.com",
       basePath: "v1",
       stage: "production",
       endPointType: "edge",
       certificateArn:
-        "arn:aws:acm:us-east-1:604201048981:certificate/d665352d-cc3e-4f06-a893-5a72fd828b4b",
+        "arn:aws:acm:us-east-1:654407031941:certificate/2ccd6eb5-2a7a-4eed-ac8e-2c16136dfecf",
       createRoute53Record: true,
       enabled: true,
       securityPolicy: "tls_1_2",
