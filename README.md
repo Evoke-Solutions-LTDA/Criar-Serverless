@@ -8,6 +8,8 @@ Execute o comando abaixo para iniciar o projeto:
 npm init -y
 ```
 
+Adicionar ao script "start": "serverless offline start",
+
 ### 2. Instalar Pacotes de Desenvolvimento
 
 ```bash
@@ -71,3 +73,4 @@ Crie o arquivo `serverless.ts` utilizando o template necessário para o seu proj
 ```bash
  serverless deploy --stage production
 ```
+
