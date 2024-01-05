@@ -27,6 +27,7 @@ npm install aws-sdk serverless-plugin-typescript serverless-cors-plugin
 ```bash
 npx tsc --init
 ```
+Copiar o template `tsconfig.json`
 
 ### 5. Adicionar `.gitignore`
 
