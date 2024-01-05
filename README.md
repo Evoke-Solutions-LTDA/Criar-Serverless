@@ -4,40 +4,40 @@
 
 Execute o comando abaixo para iniciar o projeto:
 
-\```bash
+```bash
 npm init -y
-\```
+```
 
 ### 2. Instalar Pacotes de Desenvolvimento
 
-\```bash
+```bash
 npm install serverless serverless-offline typescript @serverless/typescript @types/aws-lambda -D
-\```
+```
 
 ### 3. Instalar Pacotes Normais
 
-\```bash
+```bash
 npm install aws-sdk serverless-plugin-typescript serverless-cors-plugin
-\```
+```
 
 ### 4. Iniciar TypeScript
 
-\```bash
+```bash
 npx tsc --init
-\```
+```
 
 ### 5. Adicionar `.gitignore`
 
 Edite ou crie o arquivo `.gitignore` e adicione as seguintes entradas:
 
-\```gitignore
+```gitignore
 
 node_modules
 
 .serverless
 
 .esbuild
-\```
+```
 
 ### 6. Criar Arquivo `serverless.ts`
 
