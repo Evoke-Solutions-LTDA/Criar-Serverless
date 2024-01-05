@@ -59,3 +59,15 @@ Crie o arquivo `serverless.ts` utilizando o template necessário para o seu proj
  ┃ ┗ 📜lambda.ts
 
 ```
+
+### 8. Iniciar Dominio
+
+```bash
+ serverless create_domain
+```
+
+### 9. Fazer Deploy
+
+```bash
+ serverless deploy --stage production
+```
