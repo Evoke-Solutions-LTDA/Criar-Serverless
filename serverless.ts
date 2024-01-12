@@ -50,12 +50,11 @@ const serverlessConfiguration: AWS = {
       concurrency: 10,
     },
     customDomain: {
-      domainName: "indigo.warriorvikingnft.com",
+      domainName: "example.com",
       basePath: "v1",
       stage: "production",
       endPointType: "edge",
-      certificateArn:
-        "arn:aws:acm:us-east-1:654407031941:certificate/2ccd6eb5-2a7a-4eed-ac8e-2c16136dfecf",
+      certificateArn: "",
       createRoute53Record: true,
       enabled: true,
       securityPolicy: "tls_1_2",
