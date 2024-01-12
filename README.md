@@ -83,3 +83,19 @@ Crie o arquivo `serverless.ts` utilizando o template necessário para o seu proj
  serverless deploy --stage production
 ```
 
+
+# Informações importantes
+
+### 1. Quando usar o AWS Lambda:
+
+-**Arquiteturas Event-Driven:** O Lambda é eficaz para aplicações que precisam responder a eventos específicos, como solicitações HTTP de um API Gateway, mudanças em um banco de dados DynamoDB, uploads de arquivos no S3, entre outros.
+
+-**Operações de Backend:** Para operações de backend de aplicações ou serviços, onde não é necessário manter um servidor ativo constantemente.
+
+### 2. Quando não usar o AWS Lambda:
+
+-**Alto Volume de Solicitações e Longa Duração de Execução:**  Se suas funções Lambda são executadas frequentemente e por longos períodos, os custos podem aumentar rapidamente.
+
+-**Uso de Grande Quantidade de Memória:**  Se suas funções Lambda são executadas frequentemente e por longos períodos, os custos podem aumentar rapidamente.
+
+-**Uso Excessivo Além do Nível Gratuito:**  mbora a AWS ofereça um nível gratuito que inclui um milhão de solicitações por mês e 400.000 GB-segundos de tempo de computação, ultrapassar esses limites resultará em cobranças.
